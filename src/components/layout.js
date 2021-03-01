@@ -15,7 +15,7 @@ import "../styles/fontawesome-all.min.css"
 import "../styles/themify-icons.css"
 import "../styles/main.css"
 
-import Header from "./Header"
+import Header from "./header"
 import Footer from "./Footer"
 
 const Layout = ({ children }) => {
