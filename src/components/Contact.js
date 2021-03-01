@@ -21,7 +21,13 @@ const Contact = () => {
                       </div>
                       <div className="col-xl-8 col-xxl-7 col-lg-7">
                           <div className="contact-form-wrapper">
-                            <iframe title="facebook" src={`https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fasesseguros&tabs=timeline%2C%20messages&width=${viewMd ? '290' : '500'}&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId`} width={viewMd ? '290' : '500'} height="500" scrolling="no" frameBorder="0" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                            {
+                                viewMd ? (
+                                    <iframe title="facebook" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fasesseguros&tabs=timeline%2C%20messages&width=290&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="290" height="500" scrolling="no" frameBorder="0" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                                ) : (
+                                    <iframe title="facebook" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fasesseguros&tabs=timeline%2C%20messages&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="500" scrolling="no" frameBorder="0" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                                )
+                            }
                           </div>
                       </div>
                   </div>
