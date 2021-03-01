@@ -2983,7 +2983,7 @@ hr {
 
 @media (max-width: 575px) {
     .header-area .menu-wrapper .logo img {
-        width: 97px
+        width: 140px;
     }
 }
 
@@ -3154,7 +3154,7 @@ hr {
 }
 
 .mobile_menu .slicknav_menu {
-    background: transparent;
+    background: #fff;
     margin-top: 0px !important
 }
 
@@ -3203,7 +3203,7 @@ hr {
 @media (max-width: 575px) {
     .header-right1 {
         position: relative;
-        bottom: -80px;
+        bottom: -120px;
         z-index: 3;
         margin-right: 0px
     }
@@ -3289,8 +3289,8 @@ hr {
 
 @media (max-width: 575px) {
     .header-social a {
-        color: #fff;
-        margin-right: 10px
+        margin-right: 10px;
+        font-size: 20px;
     }
 }
 
@@ -3385,27 +3385,6 @@ hr {
 .slider-bg1 {
     background-image: url(../images/h1_ases.jpg)
 }
-/*
-
-.slider-bg2 {
-    background-image: url(../img/hero/h1_hero2.jpg)
-}
-
-.slider-bg3 {
-    background-image: url(../img/hero/h1_hero3.jpg)
-}
-
-.slider-bg01 {
-    background-image: url(../img/hero/h2_hero1.jpg)
-}
-
-.slider-bg02 {
-    background-image: url(../img/hero/h2_hero2.jpg)
-}
-
-.slider-bg03 {
-    background-image: url(../img/hero/h2_hero3.jpg)
-} */
 
 .slider-area {
     margin-top: -1px
@@ -3427,8 +3406,8 @@ hr {
 
 @media (max-width: 575px) {
     .slider-area .hero-caption-left {
-        padding: 50px 20px 20px 30px;
-        height: 337px
+        padding: 50px 100px 20px 30px;
+        height: 180px
     }
 }
 
@@ -3551,7 +3530,7 @@ hr {
 @media (max-width: 575px) {
     .slider-area .hero-caption-right {
         padding: 50px 20px 20px 30px;
-        height: 260px;
+        height: 220px;
         margin: 0
     }
 }
@@ -4440,9 +4419,9 @@ hr {
 .visit-tailor-area .tailor-offers {
     background-image: url(../images/socios.jpg);
     background-size: 100%;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: top left;
     height: 600px;
     width: 50%
 }
@@ -4456,7 +4435,7 @@ hr {
 @media (max-width: 575px) {
     .visit-tailor-area .tailor-offers {
         width: 100%;
-        height: 500px
+        height: 450px
     }
 }
 
@@ -4510,7 +4489,7 @@ hr {
 @media (max-width: 575px) {
     .visit-tailor-area .tailor-details {
         width: 100%;
-        padding: 50px 30px
+        padding: 40px 30px
     }
 }
 
@@ -4715,21 +4694,34 @@ hr {
 .contact-form-area .contact-form-wrapper {
     background: #ffff;
     -webkit-box-shadow: 0 15px 30px rgba(35, 47, 85, 0.06);
-    padding: 50px 150px;
+    padding: 50px 0px;
     border-radius: 0px;
     border: solid #F02930;
     border-width: 2px 0px 0px 0
 }
+.contact-form-area .contact-form-wrapper iframe {
+    margin: 0 auto;
+    display: block;
+    border: none;
+    overflow: hidden;
+}
 
-@media (max-width: 575px) {
+@media (min-width: 321px) and (max-width: 575px) {
     .contact-form-area .contact-form-wrapper {
-        padding: 20px
+        padding: 20px;
     }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .contact-form-area .contact-form-wrapper {
         padding: 30px
+    }
+}
+
+@media (max-width: 320px) {
+    .contact-form-area .contact-form-wrapper {
+        padding: 20px 0 0 0;
+        overflow-x: hidden;
     }
 }
 
@@ -4992,7 +4984,7 @@ hr {
     color: #C2C5DB;
     padding-right: 52px;
     font-size: 16px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     line-height: 1.8
 }
 
@@ -5070,28 +5062,22 @@ hr {
 }
 
 .footer-bottom-area {
-    background: #1D2547
+    background: rgb(38, 38, 38)
 }
 
 .footer-bottom-area .footer-border {
-    padding: 0px 0px 10px
+    padding: 10px 0px 5px
 }
 
 .footer-bottom-area .footer-copy-right p {
     color: #C2C5DB;
     font-weight: 300;
-    font-size: 8px;
+    font-size: 12px;
     line-height: 2;
-    margin-bottom: 12px
+    margin-bottom: 5px
 }
 
-.footer-bottom-area .footer-copy-right p i {
-    color: #F02930
-}
 
-.footer-bottom-area .footer-copy-right p a {
-    color: #F02930
-}
 
 .footer-social a {
     color: #F02930;

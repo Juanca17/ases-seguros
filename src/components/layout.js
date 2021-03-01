@@ -14,6 +14,7 @@ import "../styles/animate.min.css"
 import "../styles/fontawesome-all.min.css"
 import "../styles/themify-icons.css"
 import "../styles/main.css"
+import "../styles/menu.css"
 
 import Header from "./header"
 import Footer from "./Footer"
@@ -30,11 +31,11 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div id="App">
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <main>{children}</main>
+      <main id="page-wrap">{children}</main>
       <Footer siteTitle={data.site.siteMetadata?.title || `Title`} />
-    </>
+    </div>
   )
 }
 
